@@ -8,10 +8,10 @@ body {
     overflow-wrap: break-word;
 }
 
-img {
+/* img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 video,
 iframe {
@@ -90,6 +90,8 @@ h3{
     gap: 20px;
     margin: 20px;
     align-items: stretch;
+    max-width: 100%;
+    min-width: none;
 }
 
 .box {
@@ -122,14 +124,18 @@ h3{
 .box li {
     margin-bottom: 8px;
 }
+
 .box a:hover{
     color: rgb(79, 170, 255);
 }
+
 .container2{
     border: 1px solid rgb(188, 228, 248);
     border-radius: 15px;
     overflow: hidden;
     margin: 20px;
+    max-width: 100%;
+    min-width: none;
 
 }
 
@@ -169,62 +175,82 @@ h3{
     border-radius: 15px;
     overflow: hidden;
     margin: 20px;
+    max-width: 100%;
+    min-width: none;
 
 }
+.container3 img{
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 .container3 h2{
     background-color: rgb(188, 228, 248);
     margin: 0;
     padding: 10px;
     font-size: 22px;
-    font-weight: normal;
-    
+    font-weight: normal;    
 }
+
 .boxout2{
     display: flex;
     padding: 12px 0;
 }
+
 .boxin2 p{
     padding: 0 15px;
     margin: 15px;
     max-width: 100%;
     min-width: 15px;
 }
+
 .boxin2 h3{
     padding: 0 15px;
     margin: 0 18px;
     color: rgb(30, 83, 255);
 }
+
 .boxin2{
     flex: 1;
     padding: 0 18px;
     width: 90%;
 }
+
 .boxin2:not(:last-child){
     border-right: 1px solid rgb(188, 228, 248);
 }
-.boxin2 video{
-    max-width: 50%;
-}
 
+.boxin2 video,
+.boxin2 img,
+.boxin2 audio
+{
+    max-width: 270px;
+    max-height: 300px;
+}
 
 .container4{
     border: 1px solid rgb(188, 228, 248);
     border-radius: 15px;
     overflow: hidden;
     margin: 20px;
-
+    max-width: 100%;
+    min-width: none;
 }
+
 .boxout3{
     display: flex;
     padding: 12px 0;
     
 }
+
 .boxin3{
     flex: 1;
     padding: 0 18px;
     width: 90%;
 }
+
 .container4 h2{
     background-color: rgb(188, 228, 248);
     margin: 0;
@@ -232,12 +258,14 @@ h3{
     font-size: 22px;
     font-weight: normal;
 }
+
 .boxin3 p{
     position: relative;
     padding: 0 15px;
     margin: 15px;
     right: 40px;
 }
+
 .boxin3 h3{
     position: relative;
     padding: 0 15px;
@@ -245,6 +273,7 @@ h3{
     color: rgb(30, 83, 255);
     right: 40px;
 }
+
 .boxin3{
     border: 1px solid rgb(188, 228, 248);
     margin: 10px;
